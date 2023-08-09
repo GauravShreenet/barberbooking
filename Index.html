@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <title>Barber-Shop</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <header>
+            <section class="logo"><img src="Images/logo.png" class="logoImage"></section>
+            <nav class="navigation">
+                <ul class="menu">
+                    <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="Pages/service.html" class="nav-link-dropdown-toggle">SERVICES</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Pages/hair.html" class="nav-link">HAIR</a></li>
+                            <li><a href="Pages/skin.html" class="nav-link">SKIN</a></li>
+                            <li><a href="Pages/teeth.html" class="nav-link">TEETH</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="Pages/about.html" class="nav-link">ABOUT</a></li>
+                    <li class="nav-item"><a href="Pages/contact.html" class="nav-link">CONTACT</a></li>
+                    <li class="nav-item"><button id="btnLogin-Pop">LOGIN</button></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+
+        <section id="popup">
+            <div class="popup-content">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button class="buttonLogin">LOGIN</button>
+            </div>
+        </section>
+        
+        <section id="firstSection">
+            <p class="banner">
+                <span class="firstColor">WELCOME TO </span><span class="secondColor">THE BARBER SHOP</span>
+            </p>
+            <article>
+                <p class="bannerSent">Making you look good is the easy part. Making you feel better about yourself is our mission.</p>
+            </article>
+            <a href="Pages/booking.html" class="link-button">BOOK NOW!</a>
+        </section>
+        <section class="container">
+            <section class="blockView">
+                <article>
+                    <img src="Images/hair.png" alt="Hair & Beard" class="blockImage">
+                    <h4>HAIR & BEARD</h4>
+                    <p>We strive to offer a service that is tailored to the unique style of each individual. Our goal is to create a truly personalized experience that enhances the individuality of every person we serve.</p>
+                </article>
+                <a href="Pages/hair.html" class="link-button">READ MORE</a>
+            </section>
+            <section class="blockView">
+                <article>
+                    <img src="Images/skin.png" alt="Skin Care" class="blockImage">
+                    <h4>SKIN</h4>
+                    <p>Pamper your skin with some rejuvenation. Whether,  you're dealing with issues like blackheads, or simply seeking a soothing massage, our team is dedicated to providing assistance and relaxation.</p>
+                </article>
+                <a href="Pages/skin.html" class="link-button">READ MORE</a>
+            </section>
+            <section class="blockView">
+                <article>
+                    <img src="Images/Teeth.png" alt="Teeth Care" class="blockImage">
+                    <h4>TEETH</h4>
+                    <p>We are pleased to introduce our Signature Treatment, a highly effective cosmetic teeth whitening option offered by PureSmile. This 60-minute treatment ensures optimal results for our customers.</p>
+                </article>
+                <a href="Pages/teeth.html" class="link-button">READ MORE</a>
+            </section>
+        </section>
+        <section class="secondContainer">
+            <img src="Images/shop.jpg" alt ="Barber Shop">
+            <article>
+                <span class="headSection">LOOK GOOD, FEEL GOOD.</span>
+                <p>Experience the perfect blend of style and confidence at our Barbershop. It's a trendy and masculine retreat where you can enjoy great conversations, chilled beers, and groovy tunes while being taken care of by our skilled barbers wielding clippers and scissors.<br>
+                   <br>We offer exceptional male grooming services, including impeccable fades, timeless haircuts, invigorating hot towel shaves, indulgent facials, professional waxing, and even teeth whitening. Our primary goal is to create a welcoming atmosphere where gentlemen can fully trust our dedicated G&R team to provide an indulgent pampering experience, leaving them feeling incredibly confident and rejuvenated.</p>
+                <a href="Pages/about.html" class="link-button">READ MORE</a>
+            </article>
+        </section>
+        <section id="finalSection">
+            <section class="information">
+                <span>GET IN TOUCH TODAY</span>
+                <p><i class="fas fa-mobile-alt"></i>&nbsp;&nbsp;0451352524<br>
+                    <br><i class="fas fa-map-marker-alt"></i>&nbsp;&nbsp;Shop 1/701-705 Anzac Parade, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Maroubra NSW 2035<br>
+                   <br><i class="fab fa-facebook"></i>&nbsp;&nbsp;Facebook<br>
+                   <br><i class="fab fa-instagram"></i>&nbsp;&nbsp;Instagram<br>
+                   <br><i class="far fa-clock"></i><b>&nbsp;&nbsp;Friday</b> 8:30am-6:30pm<br>
+                   <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Saturday</b> 8:30am-6:30pm<br>
+                   <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sunday</b> 9am-4pm<br>
+                   <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monday</b> 8:30am-6:30pm<br>
+                   <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tuesday</b> 8:30am-6:30pm<br>
+                   <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wednesday</b> 8:30am-6:30pm<br>
+                   <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Thursday</b> 8:30am-6:30pm<br>
+                </p>
+            </section>
+            <section class="formContact">
+                <form action="submit-form.php" method="post">
+                    <section>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" placeholder="Name*" required>
+                    
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" placeholder="Email*" required>
+                    
+                        <label for="phone"></label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone*" required>
+                    </section>
+                    
+                    <label for="message"></label>
+                    <textarea id="message" name="message" style="resize: none;" placeholder="Message*" required></textarea>
+
+                    <p>0 of 1000 max characters</p>
+                    
+                    <input type="submit" value="GET IN TOUCH!">
+                </form>
+            </section>
+        </section>
+        <footer>
+            <p>Copyright &copy; The Barbershop &raquo; Website by Gaurav Shreenet</p>
+        </footer>
+        <script src="JavaScript/scriptlogin.js"></script>
+    </body>
+</html>

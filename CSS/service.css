@@ -1,0 +1,654 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background: gainsboro;
+    padding-top: 140px;
+    overflow-x: hidden;
+}
+
+.logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    background: rgb(243, 240, 240);
+    text-align: center;
+    z-index: 9999;
+}
+
+nav {
+    position: fixed;
+    top: 50;
+    width: 100%;
+    height: 70px;
+    font-size: 20px;
+    background: gainsboro;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+.navigation .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation li {
+    margin: 0 10px;
+}
+
+.navigation a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: rgb(44, 43, 43);
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(44, 43, 43);
+}
+
+#btnLogin-Pop {
+    background-color: transparent;
+    border: 2px solid #000000; 
+    color: #333;
+    font-weight: bold;
+    padding: 10px 20px;
+    font-weight: 800;
+    font-size: 20px;
+}
+
+#btnLogin-Pop:hover {
+    background-color: #333333;
+    color: white;
+}
+
+#btnLogin-Pop:active {
+    background-color: #080808;
+    color: white;
+}
+
+#popup {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 9999;
+}
+
+.popup-content {
+    height: 250px;
+    width: 500px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="password"] {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    font-size: 18px;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+#popup {
+    display: none;
+}
+
+button {
+    background-color: rgb(36, 34, 34);
+    color: white;
+    font-size: 18px;
+    font-weight: bolder;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333333;
+    color: white;
+  }
+  
+button:active {
+    background-color: #080808;
+    color: white;
+}
+
+#firstSection{
+    position: relative;
+    text-align: center;
+    width:  100%;
+    max-height: 20vh;
+    background-image: url('../Images/Barber_Accessories.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 60px;
+    padding-bottom: 250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.banner {
+    padding-top: 100px;
+}
+
+.banner .Intro {
+    font-size: 5vw;
+    font-weight: 800;
+    color: white;
+}
+
+.container {
+    height: 50vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: left;
+    position: relative;
+    z-index: 2;
+    background: white;
+}
+  
+.blockView {
+    top: 20%;
+    left: 50%;
+    margin: 8px;
+    padding-top: 8px;
+    overflow: hidden;
+    background: white;
+    width: 52vw; /* Adjust the width as needed */ 
+    height: auto;
+    vertical-align: top;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.blockView article img {
+    width: 100%;
+    height: 55vw;
+    transition: transform 0.5s ease;
+}
+
+.blockView article img:hover {
+    transform: scale(1.1);
+}
+
+.prices {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: rgb(255, 255, 255);
+}
+
+.price-list {
+    margin: 60px;
+    width: auto;
+    height: auto;
+    border-bottom: 1px dashed #b4b3b3;
+}
+  
+  /* Style for each service item */
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60vw; /* Set the width of the price list container */
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    border-top: 1px dashed #b4b3b3;
+   
+}
+
+.service:hover {
+    background: #faf9f9;
+}
+  
+  /* Style for service names */
+.name {
+    text-align: left;
+    margin-right: 10px;
+}
+  
+  /* Style for service prices */
+.price {
+    text-align: right;
+
+}
+
+.right-first {
+    display: flex;
+    width: 70vw;
+    background-image: url('../Images/hair.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+  
+.link-button {
+    text-decoration: none;
+    background-color: transparent;
+    border: 2px solid #ffffff;
+    color: #fff;
+    padding: 20px 30px;
+    font-weight: bolder;
+    transition: color 0.5s ease, border 0.5s ease;
+}
+
+.link-button:hover {
+    color: rgb(218, 218, 218);
+    border: 2px solid #d6d6d6;
+}
+
+.right-second {
+    width: 70vw;
+    display: flex;
+    background-image: url('../Images/Teeth.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-third {
+    width: 70vw;
+    background-image: url('../Images/skin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.text-tobe{
+    font-size: 3vw;
+    margin-bottom: 10px;
+    font-family: Arial, sans-serif;
+    font-weight: bolder;
+    color: #fff;
+}
+
+#finalSection {
+    max-width: 100%;
+    min-height: 70vh;
+    padding: 70px 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.information {
+    top: 20%;
+    left: 40%;
+    padding-top: 50px;
+    width: 50vh;
+}
+
+.information span{
+    font-size: 34px;
+    font-weight: bolder;   
+}
+
+.information p {
+    font-size: 20px;
+    padding-top: 50px;
+}
+
+.formContact {
+    top: 40%;
+    left: 50%;
+    background: white;
+    max-height: 600px;
+    width: 48rem;
+    padding: 80px 50px;
+    justify-content: center;
+}
+
+.formContact form {
+    padding-bottom: 30px;
+    margin-top: auto;
+}
+
+form section {
+    display: flex;
+    justify-content: space-between;
+}
+
+form section input {
+    flex: 1;
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Style for form input fields */ 
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    width: 32%;;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+/* Style for form message textarea */ 
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 18px;
+}
+
+/* Style for submit button */ 
+input[type="submit"] {
+    background-color: rgb(36, 34, 34);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 1px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+input[type="submit"]:hover {
+    background-color: #333333;
+}
+
+form p {
+    font-size: 14px;
+    color:rgb(163, 162, 162);
+    padding-bottom: 30px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background: #333333;
+    color: white;
+    text-align: center; 
+    padding: 20px;  
+}
+
+footer p{
+    padding-top: 15px;
+}
+
+@media (max-width: 988px) {
+    nav, .logo {
+        position: relative;
+    }
+
+    .logo {
+        height: 150px;
+    }
+
+    nav {
+        top: 0;
+    }
+
+    body {
+        padding-top: 0;
+    }
+
+    .hamburger{
+        display: inline-block;
+        margin-left: auto;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .menu{
+        position: fixed;
+        left: -100%;
+        top: 110px;
+        gap: 5;
+        flex-direction: column;
+        background-color: gainsboro;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    nav-item{
+        margin: 16px 0;
+    }
+
+    .menu.active {
+        left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    #firstSection {
+        padding-bottom: 120px;
+    }
+
+    .banner .Intro {
+        font-size: 10vw;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .blockView {
+        padding: 2px;
+        height: auto;
+        width: auto;
+    }
+
+    .prices {
+        height: auto;
+        flex-direction: column;
+    }
+
+    .service {
+        flex: 1;
+        padding: 5px;
+        width: auto;
+    }
+
+    .price-list {
+        margin: 20px;
+    }
+
+    .right-first {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .right-second {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 30px;
+    }
+
+    .right-third {
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 30px;
+    }
+        
+    #finalSection {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .information {
+        flex: 1;
+        padding: 40px;
+        width: auto;
+    }
+
+    .information p {
+        padding-bottom: 20px;
+    }
+    
+    .formContact {
+        background: white;
+        height: auto;
+        width: auto;
+        padding: 80px 20px;
+        justify-content: center;
+    }
+
+    .formContact form {
+        padding-bottom: 30px;
+        margin-top: auto;
+    }
+    
+    form section {
+        display: block;
+    }
+    
+    form section input {
+        margin-right: 0;
+        margin-right: 10px;
+    }
+    
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    
+    /* Style for form input fields */ 
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 100%;;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-size: 18px;
+    }
+    
+    /* Style for form message textarea */ 
+    textarea {
+        width: 100%;
+        min-height: 150px;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        font-family: inherit;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: auto;
+        height: 100px;
+    }
+
+    .logoImage {
+        width: 80%;
+        height: 100%;
+    }
+
+    .banner .Intro {
+        font-size: 10vw;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .blockView {
+        padding: 2px;
+        height: auto;
+        width: auto;
+    }
+}

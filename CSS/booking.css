@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+body{
+    background: gainsboro;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+  
+  label,
+  select,
+  input {
+    display: block;
+    margin-bottom: 10px;
+}
+  
+  button {
+    margin-top: 10px;
+}
