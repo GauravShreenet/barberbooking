@@ -67,6 +67,19 @@ nav {
     color: dodgerblue;
 }
 
+.dropdown-menu {
+    display: none;
+    padding-top: 10px;
+    position: absolute;
+    z-index: 1;
+    list-style: none;
+    background: gainsboro;
+  }
+  
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
