@@ -535,7 +535,7 @@ footer p{
 
     .blockView {
         padding: 2px;
-        height: auto;
+        height: 50vw;
         width: auto;
     }
 
@@ -669,5 +669,10 @@ footer p{
         padding: 2px;
         height: auto;
         width: auto;
+    }
+
+    .blockView article img {
+        height: 100vw;
+
     }
 }
