@@ -11,6 +11,195 @@ body{
     padding: 20px;
 }
 
+.logo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  background: rgb(243, 240, 240);
+  text-align: center;
+  z-index: 9999;
+}
+
+nav {
+  position: fixed;
+  top: 50;
+  width: 100%;
+  height: 70px;
+  font-size: 20px;
+  background: gainsboro;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.navigation .menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.navigation li {
+  margin: 0 10px;
+}
+
+.navigation a {
+  margin-right: 30px;
+  text-decoration: none;
+  color: rgb(44, 43, 43);
+  font-weight: 800;
+  font-size: 20px;
+  text-align: center;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover {
+  color: dodgerblue;
+}
+
+.dropdown-menu {
+  display: none;
+  padding-top: 10px;
+  position: absolute;
+  z-index: 1;
+  list-style: none;
+  background: gainsboro;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(44, 43, 43);
+}
+
+#btnLogin-Pop {
+  background-color: transparent;
+  border: 2px solid #000000; 
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+#btnLogin-Pop:hover {
+  background-color: #333333;
+  color: white;
+}
+
+#btnLogin-Pop:active {
+  background-color: #080808;
+  color: white;
+}
+
+#popup {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+}
+
+.popup-content {
+  height: 250px;
+  width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.popup-content input[type="text"],
+.popup-content input[type="password"] {
+  margin: 20px auto;
+  display: block;
+  width: 50%;
+  font-size: 18px;
+  padding: 8px;
+  border: 1px solid gray;
+}
+
+#popup {
+  display: none;
+}
+
+button {
+  background-color: rgb(36, 34, 34);
+  color: white;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 1px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #333333;
+  color: white;
+}
+
+button:active {
+  background-color: #080808;
+  color: white;
+}
+
+#firstSection{
+  position: relative;
+  text-align: center;
+  width:  100%;
+  max-height: 20vh;
+  background-image: url('../Images/Barber_Accessories.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 60px;
+  padding-bottom: 250px;
+  padding-left: 20px;
+  padding-right: 20px;
+  z-index: 1;
+}
+
+.banner {
+  padding-top: 100px;
+}
+
+.banner .Intro {
+  font-size: 58px;
+  font-weight: 800;
+  color: white;
+}
+
 h1 {
     text-align: center;
 }

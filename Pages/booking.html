@@ -9,6 +9,39 @@
     <title>Booking</title>
 </head>
 <body>
+  <header>
+    <section class="logo"><img src="../Images/logo.png" class="logoImage"></section>
+    <nav class="navigation">
+        <ul class="menu">
+            <li class="nav-item"><a href="../index.html" class="nav-link">HOME</a></li>
+            <li class="nav-item dropdown">
+                <a href="../Pages/service.html" class="nav-link-dropdown-toggle">SERVICES</a>
+                <ul class="dropdown-menu">
+                    <li><a href="../Pages/hair.html" class="nav-link">HAIR</a></li>
+                    <li><a href="../Pages/skin.html" class="nav-link">SKIN</a></li>
+                    <li><a href="../Pages/teeth.html" class="nav-link">TEETH</a></li>
+                </ul>
+            </li>
+            <li class="nav-item"><a href="../Pages/about.html" class="nav-link">ABOUT</a></li>
+            <li class="nav-item"><a href="../Pages/contact.html" class="nav-link">CONTACT</a></li>
+            <li class="nav-item"><button id="btnLogin-Pop">LOGIN</button></li>
+        </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+</header>
+
+<section id="popup">
+  <div class="popup-content">
+      <input type="text" placeholder="Username">
+      <input type="password" placeholder="Password">
+      <button class="buttonLogin">LOGIN</button>
+  </div>
+</section>
+<section id="firstSection"><p class="banner"><span class="Intro">Booking</span></p></section>
     <h1>Appointment Booking</h1>
 
     <form id="bookingForm">
