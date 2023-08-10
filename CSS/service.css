@@ -464,6 +464,13 @@ footer p{
         position: relative;
     }
 
+    #firstSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+    }
+
     .logo {
         height: 150px;
     }
@@ -514,11 +521,10 @@ footer p{
 }
 
 @media (max-width: 767px) {
-    #firstSection {
-        padding-bottom: 120px;
-    }
+    
 
     .banner .Intro {
+        margin-top: 40px;
         font-size: 10vw;
     }
     .container {
